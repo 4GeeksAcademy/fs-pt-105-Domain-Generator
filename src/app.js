@@ -1,11 +1,26 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
+let tern = ['.com', '.es']
+/*
+for(let i=0;i<pronoun.length;i++){
 
+  for(let j=0;j<adj.length;j++){
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+    for(let h=0;h<noun.length;h++){
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+      for(let g=0;g<tern.length;g++){
+      console.log(pronoun[i]+adj[j]+noun[h]+tern[g])
+      }
+    }
+  }
+}*/
+pronoun.forEach(i => {
+  adj.forEach(j => {
+    noun.forEach(h => {
+      tern.forEach(g => {
+        console.log(i + j + h + g)
+      })
+    })
+  })
+})
